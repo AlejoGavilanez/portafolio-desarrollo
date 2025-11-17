@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Aquí defino la información básica de mi página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+</head>
+<body>
+
+    <!-- Este es mi encabezado principal donde muestro mi nombre y foto -->
+    <header>
+        <h1>Milton Alejandro Gavilanez Monteros</h1>
+        <p>Per Aspera ad Astra</p>
+        <img src="/Image/yo.jpg" width="300" height="300"/>
+    </header>
+    
+    <!-- Aquí creo un menú para que puedan navegar por mi página -->
+    <nav>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    
+    <!-- Esta es mi sección principal donde cuento sobre mí -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Joven Conciente con pensamiento critico y hambre de conocimiento en busca de nuevos retos diariamente</p>
+        <p><strong>Estudiante de la carrera de sistemas de la informacin interesado en la tecnologia e inovacion</strong></p>
+        
+        <!-- Aquí listo las cosas que me interesan -->
+        <div>
+            <p><mark>Intereses</mark></p>
+            <ul>
+                <li>"Diseño Web"</li>
+                <li>"Diseño bases de datos"</li>
+                <li>"Hardware"</li>
+                <li>"Cloud computing"</li>
+            </ul>
+        </div>
+        
+        <!-- En esta tabla muestro mis habilidades y cuánta experiencia tengo -->
+        <div>
+            <h2>Mis Habilidades</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Habilidad</th>
+                        <th>Nivel</th>
+                        <th>Años de experiencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Avanzado</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermedio</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Intermedio</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Básico</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de habilidades: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        
+        <!-- Aquí incluyo mi video de presentación -->
+        <video width="300" height="300" controls>
+            <source src="Video/video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Esta es mi sección de contacto con un formulario -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <!-- Aquí pido el nombre de quien me contacta -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+
+            <!-- Aquí solicito el correo electrónico -->
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+            <br><br>
+
+            <!-- Aquí pregunto la edad -->
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" max="120" required>
+            <br><br>
+
+            <!-- Aquí creo un menú para seleccionar género -->
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="">Selecciona</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br><br>
+
+            <!-- Aquí pongo casillas para que marquen sus intereses -->
+            <label>Intereses:</label><br>
+            <input type="checkbox" id="web" name="intereses" value="web" required>
+            <label for="web">Desarrollo Web</label><br>
+            <input type="checkbox" id="diseno" name="intereses" value="diseno">
+            <label for="diseno">Diseño</label><br>
+            <input type="checkbox" id="marketing" name="intereses" value="marketing">
+            <label for="marketing">Marketing</label>
+            <br><br>
+
+            <!-- Aquí dejo un espacio para que escriban un mensaje -->
+            <label for="comentarios">Mensaje:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40" required minlength="10"></textarea>
+            <br><br>
+
+            <!-- Este es el botón para enviar el formulario -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Este es el pie de página con mis derechos de autor -->
+    <footer>
+        <p>&copy; 2025 Tu Nombre</p>
+    </footer>
+
+</body>
+</html>
